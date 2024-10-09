@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Alvaro Lopez Rodriguez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        nav .logo {
+            float: left;
+            font-size: 20px;
+        }
+
+        header {
+            background: #0779e4;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #0779e4;
+            border-bottom: 3px solid #0779e4;
+            padding-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card,
+        .education-card {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar {
+            background-color: #e0e0e0;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress {
+            background-color: #0779e4;
+            height: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            background: #0779e4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Alvaro Lopez Rodriguez</a>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Alvaro Lopez Rodriguez</h1>
+        <p>Desarrollador Web en Formación</p>
+    </header>
+
+    <main class="container">
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Soy Alvaro, tengo 19 años y vivo en El Escorial. Actualmente, soy estudiante en la Universidad de UTAD,
+                con gran capacidad de trabajo bajo presión, seriedad y habilidad para el trabajo en equipo. Mi objetivo
+                es convertirme en un desarrollador web full-stack altamente competente.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Mis Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h5>Java</h5>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h5>JavaScript</h5>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h5>SQL</h5>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h5>HTML</h5>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h5>CSS</h5>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="educacion">
+            <h2>Educación</h2>
+            <div class="education-card">
+                <h5>Universidad de UTAD</h5>
+                <h6>Desarrollo de Aplicaciones Web</h6>
+                <p>Actualmente cursando</p>
+            </div>
+            <div class="education-card">
+                <h5>IES María de Córdoba</h5>
+                <h6>Bachillerato</h6>
+                <p>Completado</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <ul>
+                <li><a href="mailto:alvarolopezrodriguez@gmail.com">📧 alvarolopezrodriguez@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/alvarolopez6/" target="_blank" rel="noopener noreferrer">🔗LinkedIn</a></li>
+                <li><a href="https://github.com/alvroolopezz" target="_blank" rel="noopener noreferrer"> GitHub</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <a href="portfolio.html" class="button">Ver Mi Portfolio</a>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2024 Alvaro Lopez</p>
+    </footer>
+
+    <script >
+        document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+    </script>
+</body>
+
+</html>
